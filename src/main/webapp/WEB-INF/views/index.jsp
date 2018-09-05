@@ -4,12 +4,16 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<link rel ="stylesheet" href = "/style.css">
+
 <title>Recipes</title>
 </head>
 <body>
 <p> this is our awesome recipe for you!</p>
-<p>label ${recipe.label} </p>
-
+<p>label ${result[0]} </p>
+<p>label <a href="${result[1].recipe.url}"> ${result[1].recipe.label} </a>
+<img class="image" src="${result[1].recipe.image}">
+ </p>
 
 
 </body>
